@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo-loving.png" type="image/x-icon">
+    <title>Loving Bordado</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+
+    <nav class="cor navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1 class="m-0">Loving Bordado</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categoria">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produto">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contatos</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid d-md-none" src="./assets/img/Mobile/banner.png"
+                    alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
+                <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="./assets/img/Tablet/banner.png"
+                    alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
+                <img class="img-fluid w-100 d-none d-xl-block" src="./assets/img/Desktop/banner.png"
+                    alt="Modelo feminina vestindo blusa rosa fluorescente, em fundo lilás.">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1">COLEÇÃO ATEMPORAL</h5>
+                    <p class="fs-4">Estilo e qualidade para durar.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid d-md-none" src="./assets/img/Mobile/banner.png"
+                    alt="Modelo feminina utilizando óculos escuros e vestindo conjunto esportivo de blusa e calça na cor preta, sentada em um sofá preto em um fundo rosa.">
+                <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="./assets/img/Tablet/banner.png"
+                    alt="Modelo feminina utilizando óculos escuros e vestindo conjunto esportivo de blusa e calça na cor preta, sentada em um sofá preto em um fundo rosa.">
+                <img class="img-fluid w-100 d-none d-xl-block" src="./assets/img/Desktop/banner.png"
+                    alt="Modelo feminina utilizando óculos escuros e vestindo conjunto esportivo de blusa e calça na cor preta, sentada em um sofá preto em um fundo rosa.">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1">COLEÇÃO ATEMPORAL</h5>
+                    <p class="fs-4">Estilo e qualidade para durar.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid d-md-none" src="./assets/img/Mobile/banner.png"
+                    alt="Modelo feminia vestindo blusa rosa florecente com fundo lilas">
+                <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="./assets/img/Tablet/banner.png"
+                    alt="Modelo feminia vestindo blusa rosa florecente com fundo lilas">
+                <img class="img-fluid w-100 d-none d-xl-block" src="./assets/img/Desktop/banner.png"
+                    alt="Modelo feminia vestindo blusa rosa florecente com fundo lilas">
+                <!-- <div class="carousel-caption position-absolute posicao d-none d-md-block">
+                    <h5 class="fs-1">COLEÇÃO ATEMPORAL</h5>
+                    <p class="fs-4">Alto impacto visual, baixo impacto ambiental.</p>
+                </div> -->
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    <section class="p-5 my-5 cor" id="categoria">
+    <h2 class="text-center my-3 my-xl-5 cor-text fw-bold">Categorias da Loving Bordado</h2>
+
+    <div class="container row mx-auto g-4">
+
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card rounded-0 border-2">
+                <img class="d-md-none" src="./assets/img/Mobile/categorias/2.jpeg" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe vermelho">
+                <img class="d-none d-md-block d-xl-none" src="./assets/img/Tablet/categorias/2.jpeg" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe vermelho">
+                <img class="d-none d-xl-block" src="./assets/img/Desktop/categorias/2.jpeg" alt="Camiseta masculina de manga na cor verde, com bolso, com detalhe vermelho">
+                <div class="card-header cor">
+                    <p class="text-center text-light fw-bold">TOALHA</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card rounded-0 border-2">
+                <img class="d-md-none" src="./assets/img/Mobile/categorias/3.jpeg" alt="Bolsa de alça na cor marrom">
+                <img class="d-none d-md-block d-xl-none" src="./assets/img/Tablet/categorias/3.jpeg" alt="Bolsa de alça na cor marrom">
+                <img class="d-none d-xl-block" src="./assets/img/Desktop/categorias/3.jpeg" alt="Bolsa de alça na cor marrom">
+                <div class="card-header cor">
+                    <p class="text-center text-light cor-text fw-bold">BASTIDOR</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-xxl-2 center">
+            <div class="card rounded-0 border-2">
+                <img class="d-md-none" src="./assets/img/Mobile/categorias/1.jpeg" alt="Tênis na cor branca com traços azul marinho, vermelho e com cardaço vermelho">
+                <img class="d-none d-md-block d-xl-none" src="./assets/img/Tablet/categorias/1.jpeg" alt="Tênis na cor branca com traços azul marinho, vermelho e com cardaço vermelho">
+                <img class="d-none d-xl-block" src="./assets/img/Desktop/categorias/1.jpeg" alt="Tênis na cor branca com traços azul marinho, vermelho e com cardaço vermelho">
+                <div class="card-header cor">
+                    <p class="text-center text-light cor-text fw-bold">QUADRO</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section class="my-5 pb-5" id="produto">
+    <h2 class="container text-center my-3 my-xl-5 cor-text-marrom fw-bold">Faça já seu orçamento</h2>
+
+    <div class="container">
+        <div class="card-container-1">
+            <div class="card-10">
+              <img src="./assets/img/logo-loving.png">
+              <div>
+                <h2>Tela bordada</h2>
+                <h3>R$ ..........</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
+                <a href=" http://wa.me/5582994440908" target="_blank">
+                  <button>Realize seu Orçamento</button>
+                </a>  
+              </div>
+            </div>
+    
+            <div class="card-10">
+              <img src="./assets/img/logo-loving.png">
+              <div>
+                <h2>Tela bordada</h2>
+                <h3>R$ ..........</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
+                <a href=" http://wa.me/5582994440908" target="_blank">
+                  <button>Realize seu Orçamento</button>
+                </a>  
+              </div>
+            </div>
+    
+            <div class="card-10">
+              <img src="./assets/img/logo-loving.png">
+              <div>
+                <h2>Tela bordada</h2>
+                <h3>R$ ..........</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
+                <a href=" http://wa.me/5582994440908" target="_blank">
+                  <button>Realize seu Orçamento</button>
+                </a>  
+              </div>
+            </div>
+    
+            <div class="card-10">
+              <img src="./assets/img/logo-loving.png">
+              <div>
+                <h2>Tela bordada</h2>
+                <h3>R$ ..........</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
+                <a href=" http://wa.me/5582994440908" target="_blank">
+                  <button>Realize seu Orçamento</button>
+                </a>  
+              </div>
+            </div>
+    
+            <div class="card-10">
+              <img src="./assets/img/logo-loving.png">
+              <div>
+                <h2>Tela bordada</h2>
+                <h3>R$ ..........</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
+                <a href=" http://wa.me/5582994440908" target="_blank">
+                  <button>Realize seu Orçamento</button>
+                </a>  
+              </div>
+            </div>
+    
+            <div class="card-10">
+              <img src="./assets/img/logo-loving.png">
+              <div>
+                <h2>Tela bordada</h2>
+                <h3>R$ ..........</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
+                <a href=" http://wa.me/5582994440908" target="_blank">
+                  <button>Realize seu Orçamento</button>
+                </a>  
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+    <section class="p-5 my-5 cor" id="galeria">
+        <h2 class="text-center text-light">Galeria da Loving</h2>
+        <div class="img-gallery container-fluid">
+            <img src="./assets/img/logo-loving.png" alt="">
+            <img src="./assets/img/logo-loving.png" alt="">
+            <img src="./assets/img/logo-loving.png" alt="">
+            <img src="./assets/img/logo-loving.png" alt="">
+            <img src="./assets/img/logo-loving.png" alt="">
+            <img src="./assets/img/logo-loving.png" alt="">
+        </div>
+
+        <h2 class="text-center text-light cor-text">Formas de Pagamentos</h2>
+        <br>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-center align-items-center gap-3">
+            <div class="divs-facilidade d-flex">
+                <div><i class="bi bi-x-diamond fs-1 cor-text"></i></div>
+                <div>
+                    <div class="ms-3 mb-1 cor-text">PAGUE PELO PIX</div>
+                </div>
+            </div>
+            <div class="divs-facilidade d-flex">
+                <div><i class="bi bi-cash-stack fs-1 cor-text"></i></div>
+                <div>
+                    <div class="ms-3 mb-1 cor-text">DINHEIRO</div>
+                </div>
+            </div>
+            <div class="divs-facilidade d-flex">
+                <div><i class="bi bi-credit-card fs-1 cor-text"></i></div>
+                <div>
+                    <div class="ms-3 mb-1 cor-text">CARTÃO CRÉDITO/DÉBITO</div>
+                    <div class="texto-menor ms-3 text-light cor-text">Consultar juros da maquininha de acordo com a quantidade de parcelas.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 my-5" id="contato">
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <i class="fab"></i>
+                        <span class="logo_name">Loving Bordado</span> 
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Menu</li>
+                        <hr>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Categoria</a></li>
+                        <li><a href="">Produtos</a></li>
+                        <li><a href="">Galeria</a></li>
+                        <li><a href="">Contatos</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Categorias</li>
+                        <hr>
+                        <li><a href="">TOALHA</a></li>
+                        <li><a href="">BASTIDOR</a></li>
+                        <li><a href="">QUADRO</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Forma de Pagamento</li>
+                        <hr>
+                        <li>PIX</li>
+                        <li>DINHEIRO</li>
+                        <li>CARTÃO CRÉDITO/DÉBITO</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyrigth_text">&copy; Todos os direitos são reservados pela Loving Bordado
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+</body>
+</html>
