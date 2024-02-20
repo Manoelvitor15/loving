@@ -2,11 +2,19 @@ body {
     background-color: #EFECE9;
 }
 
+.cor-fundo{
+    background-color: #EFECE9;
+}
+
 .cor-text {
     color: #EFECE9;
 }
 
 .cor-text-marrom {
+    color: #58362D;
+}
+
+.cor-text-marrom a{
     color: #58362D;
 }
 
@@ -194,6 +202,10 @@ footer .content .link-boxes .box a{
     position: relative;
 }
 
+.link-boxes .box .link_name{
+    font-weight: bold;
+}
+
 .link_name::before{
     content: '';
     position: absolute;
@@ -217,12 +229,10 @@ footer .bottom-details .bottom_text{
     font-size: 17px;
     font-weight: 300;
     color: #58362D;
-    opacity: 0.8;
     text-decoration: none;
 }
 
 .bottom-details .bottom_text a:hover{
-    opacity: 1;
     text-decoration: underline;
 }
 
