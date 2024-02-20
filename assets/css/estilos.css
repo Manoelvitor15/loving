@@ -1,5 +1,6 @@
 body {
     background-color: #EFECE9;
+    font-family: 'Arista Pro';
 }
 
 .cor-fundo{
@@ -140,6 +141,10 @@ body {
 
 /* FOOTER */
 
+hr {
+    background-color: #58362D;
+}
+
 footer {
     position: relative;
     background: #EFECE9;
@@ -259,4 +264,8 @@ footer .bottom-details .bottom_text{
     .bottom-details .bottom_text a {
         font-size: 12px;
     }
+
+    .link-boxes .box .dia{
+        font-size: 14px;
+    } 
 }
