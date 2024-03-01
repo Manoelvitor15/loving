@@ -3,6 +3,14 @@ body {
     font-family: 'Arista Pro';
 }
 
+p {
+    color: #58362D;
+}
+
+.text-reset{
+    text-decoration: none;
+}
+
 .cor-fundo{
     background-color: #EFECE9;
 }
@@ -77,6 +85,15 @@ body {
 .img-gallery img:hover {
     scale: 0.85;
     box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
+}
+
+@media (max-width: 500px) {
+    .img-gallery {
+        width: 100%; /* Definindo a largura como 100% para preencher a tela */
+        margin: 1rem auto; /* Reduzindo a margem */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajustando o tamanho mínimo e máximo das colunas para telas menores */
+        gap: 10px; /* Reduzindo ainda mais o espaçamento entre as imagens */
+    }
 }
 
 /* PRODUTOS */
