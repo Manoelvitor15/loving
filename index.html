@@ -44,6 +44,9 @@
                         <a class="nav-link" href="#galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contato">Contatos</a>
                     </li>
 
@@ -152,6 +155,46 @@
             </div>
         </div>
     </section>
+    <section class="p-5 my-5" id="feedback">
+        <h2 class="container text-center my-3 my-xl-5 cor-text-marrom fw-bold">Deixe seu Feedback</h2>
+        
+        <form class="container-fluid cor p-4" id="feedbackForm">
+        <div class="mb-2">
+            <label for="name" class="form-label cor-text fw-bold">Nome:</label>
+            <input type="text" class="form-control cor-fundo" id="name" name="name" placeholder="Digite seu nome e sobrenome " required>
+        </div>
+
+        <label for="rating" class="cor-text fw-bold">Classificação:</label>
+        <div id="starRating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        
+        <div class="mb-3">
+            <label for="feedback" class="form-label cor-text fw-bold">Feedback:</label>
+            <textarea class="form-control cor-fundo" id="feedbackText" rows="4" placeholder="Escreva aqui..." required></textarea>
+        </div>
+        <center>
+        <input class="btn btn-5 cor-text" type="submit" value="Enviar Feedback">
+        </center>
+        </form>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="carousel-container container">
+            <center>
+            <div class="container carousel">
+            </div>
+            
+            <button class="prev-button">&lt;</button>
+            <button class="next-button">&gt;</button>
+            </center>
+        </div>
+        
+    </section>
     <section class="p-5 my-5" id="contato">
         <!-- Footer -->
     <footer class="text-center text-lg-start text-muted cor-fundo">
@@ -206,6 +249,9 @@
                 <a href="#galeria" class="text-reset">Galeria</a>
                 </p>
                 <p>
+                <a href="#feedback" class="text-reset">Feedback</a>
+                </p>
+                <p>
                 <a href="#contato" class="text-reset">Contatos</a>
                 </p>
             </div>
@@ -225,6 +271,9 @@
                     <p class="dia">Domingo - Fechado</p>
             </div>
             <!-- Grid column -->
+    
+            
+    
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
@@ -251,11 +300,17 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+       
     </section>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!-- Bootstrap -->
+
+    <script src="./assets/js/classificacao.js"></script>
+    <script src="./assets/js/caixaFeedback.js"></script>
+    <script src="./assets/js/envioFeedback.js"></script>
 </body>
 </html>
