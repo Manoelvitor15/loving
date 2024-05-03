@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/logo-loving.png" type="image/x-icon">
     <title>Loving Bordado</title>
+     <!-- Adicione o SDK do Firebase -->
+     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -58,7 +61,7 @@
         
     <div class="card mb-3 cor-fundo">
         <h2 class="text-center my-3 my-xl-5 cor-text-marrom fw-bold">Sobre Loving Bordado</h2>
-        <img src="./assets/img/Desktop/banner.png" class="card-img-top" alt="...">
+        <img src="./assets/img/banner.png" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text cor-text-marrom">Loving Bordado foi criado por <a href="">Leticia Hipolito</a> em 20XX. Ela é uma artista dedicada ao bordado feito à mão que, através de sua loja online, ela compartilha suas criações únicas e promove a beleza e a terapia do bordado. Seu compromisso com a arte vai além do pessoal, buscando inspirar outros a explorar sua criatividade e encontrar significado nas formas tradicionais de expressão manual.</p>
         </div>
@@ -68,19 +71,19 @@
     <h2 class="text-center my-3 my-xl-5 cor-text fw-bold">Categorias da Loving Bordado</h2>
     <div class="container-fluid row gx-4 gy-5 justify-content-center">
     <div class="card cor border-0" style="width: 18rem;">
-        <img src="./assets/img/Desktop/categorias/2.jpeg" class="card-img-top" alt="...">
+        <img src="./assets/img/categorias/2.jpeg" class="card-img-top" alt="...">
         <div class="card-body cor-fundo cor-text-marrom">
           <h5 class="card-title text-center">TOALHA</h5>
         </div>
     </div>
     <div class="card cor border-0" style="width: 18rem;">
-        <img src="./assets/img/Desktop/categorias/1.jpeg" class="card-img-top" alt="...">
+        <img src="./assets/img/categorias/1.jpeg" class="card-img-top" alt="...">
         <div class="card-body cor-fundo cor-text-marrom">
           <h5 class="card-title text-center cor-text-marrom">TELA</h5>
         </div>
     </div>
     <div class="card cor border-0" style="width: 18rem;">
-        <img src="./assets/img/Desktop/categorias/3.jpeg" class="card-img-top" alt="...">
+        <img src="./assets/img/categorias/3.jpeg" class="card-img-top" alt="...">
         <div class="card-body cor-fundo cor-text-marrom">
           <h5 class="card-title text-center cor-text-marrom">BASTIDOR</h5>
         </div>
@@ -92,42 +95,55 @@
 
     <div class="container">
         <div class="card-container-1 container-fluid gap-3 justify-content-center">
-            <div class="card-10">
-              <img src="./assets/img/logo-loving.png">
-              <div>
-                <h2>Tela bordada</h2>
-                <h3>R$ ..........</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
-                <a href=" http://wa.me/5582994440908?text=Olá,%20quero%20realizar%20orçamento%20de%20uma%20tela!" target="_blank" value="Tela bordada">
-                  <button>Realize seu Orçamento</button>
-                </a>  
-              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/produtos/2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body cor">
+                  <h5 class="card-title cor-text text-center">Toalha</h5>
+                  <hr class="cor-text">
+                  <h6>Tamanhos disponíveis:</h6>
+                  <ul>
+                    <li>Pequena</li>
+                    <li>Média</li>
+                    <li>Grande</li>
+                  </ul>
+                  <a href=" http://wa.me/5582994440908?text=Olá,%20quero%20realizar%20orçamento%20de%20uma%20toalha!" target="_blank" value="Tela bordada">
+                    <button>Realize seu Orçamento</button>
+                  </a>
+                </div>
             </div>
-    
-            <div class="card-10">
-              <img src="./assets/img/logo-loving.png">
-              <div>
-                <h2>Tela bordada</h2>
-                <h3>R$ ..........</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
-                <a href=" http://wa.me/5582994440908?text=Olá,%20quero%20realizar%20orçamento%20de%20uma%20tela!" target="_blank">
-                  <button>Realize seu Orçamento</button>
-                </a>  
-              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/produtos/1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body cor">
+                  <h5 class="card-title cor-text text-center">Tela Bordada</h5>
+                  <hr class="cor-text">
+                  <h6>Tamanhos disponíveis:</h6>
+                  <ul>
+                    <li>16x20cm</li>
+                    <li>20x30cm</li>
+                    <li>30x30cm</li>
+                  </ul>
+                  <a href=" http://wa.me/5582994440908?text=Olá,%20quero%20realizar%20orçamento%20de%20uma%20tela!" target="_blank" value="Tela bordada">
+                    <button>Realize seu Orçamento</button>
+                  </a>
+                </div>
             </div>
-    
-            <div class="card-10">
-              <img src="./assets/img/logo-loving.png">
-              <div>
-                <h2>Tela bordada</h2>
-                <h3>R$ ..........</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, quibusdam voluptates accusamus quia a similique atque molestiae vero blanditiis harum incidunt dolores libero corrupti illo, aliquid magnam deleniti recusandae unde?</p>
-                <a href=" http://wa.me/5582994440908?text=Olá,%20quero%20realizar%20orçamento%20de%20uma%20tela!" target="_blank" value="Tela bordada">
-                  <button>Realize seu Orçamento</button>
-                </a>  
-              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/produtos/3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body cor">
+                  <h5 class="card-title cor-text text-center">Bastidor</h5>
+                  <hr class="cor-text">
+                  <h6>Tamanhos disponíveis:</h6>
+                  <ul>
+                    <li>16cm</li>
+                    <li>20cm</li>
+                    <li>25cm</li>
+                  </ul>
+                  <a href=" http://wa.me/5582994440908?text=Olá,%20quero%20realizar%20orçamento%20de%20um%20bastidor!" target="_blank" value="Tela bordada">
+                    <button>Realize seu Orçamento</button>
+                  </a>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 </section>
     <section class="p-5 my-5 cor" id="galeria">
@@ -135,22 +151,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img class="img-fluid mb-4 shadow rounded" class="img-fluid"src="./assets/img/Desktop/produtos/1.jpeg" alt="">
+                    <img class="img-fluid mb-4 shadow rounded" class="img-fluid"src="./assets/img/galeria-loving/1.jpeg" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/Desktop/produtos/2.jpeg" alt="">
+                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/galeria-loving/2.jpeg" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/Desktop/produtos/3.jpeg" alt="">
+                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/galeria-loving/3.jpeg" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/Desktop/produtos/1.jpeg" alt="">
+                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/galeria-loving/1.jpeg" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/Desktop/produtos/2.jpeg" alt="">
+                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/galeria-loving/2.jpeg" alt="">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/Desktop/produtos/3.jpeg" alt="">
+                    <img class="img-fluid mb-4 shadow rounded" src="./assets/img/galeria-loving/3.jpeg" alt="">
                 </div>
             </div>
         </div>
@@ -158,143 +174,99 @@
     <section class="p-5 my-5" id="feedback">
         <h2 class="container text-center my-3 my-xl-5 cor-text-marrom fw-bold">Deixe seu Feedback</h2>
         
-        <form class="container-fluid cor p-4" id="feedbackForm">
-        <div class="mb-2">
-            <label for="name" class="form-label cor-text fw-bold">Nome:</label>
-            <input type="text" class="form-control cor-fundo" id="name" name="name" placeholder="Digite seu nome e sobrenome " required>
+        <div class="container-fluid cor p-4">
+            <form class="container-fluid cor p-4" id="feedbackForm">
+                <div class="mb-2">
+                    <label for="name" class="form-label cor-text fw-bold">Nome:</label>
+                    <input type="text" class="form-control cor-fundo" id="name" name="name" placeholder="Digite seu nome e sobrenome " required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="feedback" class="form-label cor-text fw-bold">Feedback:</label>
+                    <textarea class="form-control cor-fundo" id="feedbackText" rows="4" placeholder="Escreva aqui..." required></textarea>
+                </div>
+                <center>
+                <input class="btn btn-5 cor-text" type="submit" value="Enviar Feedback">
+                </center>
+            </form>
         </div>
-
-        <label for="rating" class="cor-text fw-bold">Classificação:</label>
-        <div id="starRating">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
-        </div>
-        
-        <div class="mb-3">
-            <label for="feedback" class="form-label cor-text fw-bold">Feedback:</label>
-            <textarea class="form-control cor-fundo" id="feedbackText" rows="4" placeholder="Escreva aqui..." required></textarea>
-        </div>
-        <center>
-        <input class="btn btn-5 cor-text" type="submit" value="Enviar Feedback">
-        </center>
-        </form>
+    
         <br><br>
         <hr>
         <br><br>
-        <div class="carousel-container container">
-            <center>
-            <div class="container carousel">
+    
+        <!-- Seção para exibir feedbacks -->
+            <div class="feedback-list">
+                <h2>Feedbacks Recebidos</h2>
+                <ul id="feedbackList"></ul>
             </div>
-            
-            <button class="prev-button">&lt;</button>
-            <button class="next-button">&gt;</button>
-            </center>
-        </div>
         
     </section>
-    <section class="p-5 my-5" id="contato">
+
+
+    <section class="p-5 my-5 cor" id="contato">
         <!-- Footer -->
-    <footer class="text-center text-lg-start text-muted cor-fundo">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 cor-fundo">
-        <!-- Right -->
-        <div>
-            <a href=" http://wa.me/5582994440908" target="_blank" class="me-4 text-reset">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-            <a href="https://instagram.com/lovingbordado?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="me-4 text-reset">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@lovingbordado?lang=pt-BR&is_from_webapp=1&sender_device=mobile&sender_web_id=7297114669830931973" target="_blank" class="me-4 text-reset">
-                <i class="bi bi-tiktok"></i>
-            </a>
-            <a href="https://open.spotify.com/playlist/25xe9ifFkTsnq9I57gvyN7?si=ryxfMaejQTeKSBMsvt6IWA&nd=1&utm_medium=organic&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F25xe9ifFkTsnq9I57gvyN7%3Fsi%3DryxfMaejQTeKSBMsvt6IWA&%24android_redirect_timeout=3000&feature=organic&_branch_match_id=1291936731364931515&_branch_referrer=H4sIAAAAAAAAA72N2wrCMBBEvyY%2BtrX1gkIRRQoiCqLgY4nJRtfGJCYbsX9vK%2FgLwjwMcxjOjciFeZoGZwlVm3DnEo2mSRfOWxkFldaBGbB8pKLWdfS6vPUXVixZXnXpcfJ7C%2FvoJqd5qzFQV%2FPxG2aoquYUzHO2GU%2Bvr3Y%2FZUUVkBVr377VjsP9cILtcbULL5pszsuvjGt94aL5i5DlEyM7OuzN3EhvUdYeJHoQVBM%2BwEYqiyzLBgo4RQ%2Bl9VduUHwADhCBQT4BAAA%3D" target="_blank" class="me-4 text-reset">
-                <i class="bi bi-spotify"></i>
-            </a>
-            <a href="https://pin.it/531bkga" target="_blank" class="me-4 text-reset">
-                <i class="bi bi-pinterest"></i>
-            </a>
-        </div>
-        <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-    
+    <footer class="text-center text-lg-start text-muted cor">
         <!-- Section: Links  -->
-        <section class="cor-fundo">
+        <section class="cor">
         <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
                 <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4 cor-text-marrom">
-                Menu
-                </h6>
-                <p>
-                <a href="index.html" class="text-reset">Home</a>
-                </p>
-                <p>
-                <a href="#sobre" class="text-reset">Sobre</a>
-                </p>
-                <p>
-                <a href="#categoria" class="text-reset">Categorias</a>
-                </p>
-                <p>
-                <a href="#produto" class="text-reset">Produtos</a>
-                </p>
-                <p>
-                <a href="#galeria" class="text-reset">Galeria</a>
-                </p>
-                <p>
-                <a href="#feedback" class="text-reset">Feedback</a>
-                </p>
-                <p>
-                <a href="#contato" class="text-reset">Contatos</a>
-                </p>
-            </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 cor-text text-center">Redes Sociais</h6>
+                    <p class="text-center"><a href="https://instagram.com/lovingbordado?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-instagram cor-text"></i>
+                        Instagram</a></p>
+                    <p class="text-center"><a href="https://www.tiktok.com/@lovingbordado?lang=pt-BR&is_from_webapp=1&sender_device=mobile&sender_web_id=7297114669830931973" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-tiktok cor-text"></i>
+                        Tik-Tok</a>
+                    </p>
+                    <p class="text-center"><a href="https://open.spotify.com/playlist/25xe9ifFkTsnq9I57gvyN7?si=ryxfMaejQTeKSBMsvt6IWA&nd=1&utm_medium=organic&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F25xe9ifFkTsnq9I57gvyN7%3Fsi%3DryxfMaejQTeKSBMsvt6IWA&%24android_redirect_timeout=3000&feature=organic&_branch_match_id=1291936731364931515&_branch_referrer=H4sIAAAAAAAAA72N2wrCMBBEvyY%2BtrX1gkIRRQoiCqLgY4nJRtfGJCYbsX9vK%2FgLwjwMcxjOjciFeZoGZwlVm3DnEo2mSRfOWxkFldaBGbB8pKLWdfS6vPUXVixZXnXpcfJ7C%2FvoJqd5qzFQV%2FPxG2aoquYUzHO2GU%2Bvr3Y%2FZUUVkBVr377VjsP9cILtcbULL5pszsuvjGt94aL5i5DlEyM7OuzN3EhvUdYeJHoQVBM%2BwEYqiyzLBgo4RQ%2Bl9VduUHwADhCBQT4BAAA%3D" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-spotify cor-text"></i>
+                        Spotify</a></p>
+                    <p class="text-center"><a href="https://pin.it/531bkga" target="_blank" class="me-4 text-reset">
+                        <i class="bi bi-pinterest cor-text"></i>
+                        Pinterest</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4 cor-text-marrom">
-                <i class="fas fa-gem me-3"></i>Horários
+                <h6 class="text-uppercase fw-bold mb-4 cor-text text-center">Horários
                 </h6>
-                    <p class="dia">Segunda - 9h às 20h</p>
-                    <p class="dia">Terça - 9h às 20h</p>
-                    <p class="dia">Quarta - 9h às 20h</p>
-                    <p class="dia">Quinta - 9h às 20h</p>
-                    <p class="dia">Sexta - 9h às 20h</p>
-                    <p class="dia">Sábado - 9h às 20h</p>
-                    <p class="dia">Domingo - Fechado</p>
+                    <p class="dia text-center">Segunda - 9h às 20h</p>
+                    <p class="dia text-center">Terça - 9h às 20h</p>
+                    <p class="dia text-center">Quarta - 9h às 20h</p>
+                    <p class="dia text-center">Quinta - 9h às 20h</p>
+                    <p class="dia text-center">Sexta - 9h às 20h</p>
+                    <p class="dia text-center">Sábado - 9h às 20h</p>
+                    <p class="dia text-center">Domingo - Fechado</p>
             </div>
-            <!-- Grid column -->
-    
-            
-    
-            <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4 cor-text-marrom">Contatos</h6>
-                <p><i class="bi bi-geo-alt-fill"></i>
+                <h6 class="text-uppercase fw-bold mb-4 cor-text text-center">Contatos</h6>
+                <p class="text-center"><i class="bi bi-geo-alt-fill"></i>
                     Atalaia/AL</p>
-                <p>
+                <p class="text-center">
                     <i class="bi bi-envelope-at"></i>
                 suportelovingbordado@gmail.com
                 </p>
-                <p><i class="bi bi-whatsapp"></i> 82 99444-0908</p>
+                <p class="text-center"><i class="bi bi-whatsapp"></i> 82 99444-0908</p>
             </div>
             <!-- Grid column -->
             </div>
-            <!-- Grid row -->
+            <!-- Grid column -->
+            
         </div>
+            <!-- Grid row -->
+       
         </section>
         <!-- Section: Links  -->
     
         <!-- Copyright -->
-        <div class="text-center p-4 cor-fundo cor-text-marrom">
+        <div class="text-center p-4 cor cor-text">
         © 2024 Todos os direitos são reservados pela Loving Bordado
         </div>
         <!-- Copyright -->
@@ -309,8 +281,7 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap -->
 
-    <script src="./assets/js/classificacao.js"></script>
-    <script src="./assets/js/caixaFeedback.js"></script>
     <script src="./assets/js/envioFeedback.js"></script>
+    <source src="./assets/js/conecta.js" type="">
 </body>
 </html>
