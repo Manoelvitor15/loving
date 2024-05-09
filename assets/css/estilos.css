@@ -214,16 +214,6 @@ footer {
     left: 0;
 }
 
-footer::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100px;
-    height: 1px;
-    width: 100%;
-    background: #58362D;    
-}
-
 footer .content{
     max-width: 1250px;
     margin: auto;
