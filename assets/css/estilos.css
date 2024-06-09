@@ -149,6 +149,18 @@ p {
     box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
 }
 
+.clicar {
+    background-color: #58362D;
+    color: #EFECE9;
+    border: 1px solid #EFECE9;
+}
+
+.clicar:hover{
+    background-color: #EFECE9;
+    color: #58362D;
+    border: 1px solid #EFECE9;
+}
+
 @media (max-width: 500px) {
     .img-gallery {
         width: 100%; /* Definindo a largura como 100% para preencher a tela */
